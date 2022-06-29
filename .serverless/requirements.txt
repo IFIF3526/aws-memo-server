@@ -1,0 +1,10 @@
+Flask-JWT-Extended
+Flask==1.1.4
+Werkzeug==1.0.1
+email-validator
+flask-restful
+markupsafe==2.0.1
+mysql-connector-python
+passlib
+psycopg2-binary
+requests

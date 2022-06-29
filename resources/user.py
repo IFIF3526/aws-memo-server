@@ -84,7 +84,7 @@ class UserRegisterResource(Resource) :
         # 암호화를 하는 방법
         access_token = create_access_token(user_id)
 
-        return {'result' : 'success', 'access_token' : access_token}, 200
+        return {'result' : 'success', 'access_token' : access_token, 'data' : 'hello'}, 200
 
 class UserLoginResource(Resource) :
     def post(self) :

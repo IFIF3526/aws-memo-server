@@ -143,6 +143,7 @@ class UserLoginResource(Resource) :
         if len(result_list) == 0 :
             return {'ERROR' : '등록되지 않은 이메일입니다.'}, 400
 
+
         # 4. 비밀번호가 유효한지 확인한다.
         user_info = result_list[0]
 

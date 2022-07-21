@@ -140,7 +140,7 @@ class UserLoginResource(Resource) :
 
         # 3. result_list 의 행의 갯수가 1개이면, 유저 데이터를 정상적으로 받아온 것이고,
         # 행의 갯수가 0이면, 클라이언트가 요청한 이메일은 회원가입이 되어 있지 않은 이메일이다.
-        if len(result_list) != 1 :
+        if len(result_list) == 0 :
             return {'ERROR' : '등록되지 않은 이메일입니다.'}, 400
 
         # 4. 비밀번호가 유효한지 확인한다.

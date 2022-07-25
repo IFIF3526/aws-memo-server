@@ -28,7 +28,7 @@ api.add_resource(UserRegisterResource, '/users/register')
 api.add_resource(UserLoginResource, '/users/login')
 api.add_resource(UserLogoutResource, '/users/logout')
 api.add_resource(MemoResource, '/memo')
-api.add_resource(MemoListResource, '/memo//<int:memo_id>')
+api.add_resource(MemoListResource, '/memo/<int:memo_id>')
 api.add_resource(FollowResource, '/follow/<int:follow_id>')
 api.add_resource(FollowListResource, '/follow')
 
